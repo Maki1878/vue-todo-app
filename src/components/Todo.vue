@@ -1,12 +1,10 @@
 <template>
   <div class="todo">
     <input :checked="complete" type="checkbox" @change="toggleComplete(todo)" />
-    <input
-      :value="title"
-      type="text"
-      class="text-input"
-      @change="changeText(todo, $event.target.value)"
-    />
+    <div class="text-input">
+      <input :value="title" type="text" @change="changeText(todo, $event.target.value)" />
+      <slot></slot>
+    </div>
     <!-- <div v-if="showDetails" class="details">
       <p>{{ task.details }}</p>
     </div> -->
@@ -53,7 +51,14 @@ export default {
 .text-input {
   height: 35px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-input input {
   border: none;
   outline: none;
+  flex: 1;
 }
 </style>

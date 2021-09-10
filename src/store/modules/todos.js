@@ -17,8 +17,9 @@ export default {
       const response = await axios.post('http://localhost:3000/todos', newTodo);
       commit('addNewTodo', response.data);
     },
-    async removeTodo(id) {
+    async removeTodo({ commit }, id) {
       await axios.delete(`http://localhost:3000/todos/${id}`);
+      commit('deleteTodo', id);
     },
   },
   getters: {
@@ -35,6 +36,9 @@ export default {
     },
     addNewTodo(state, newTodo) {
       state.todos.unshift(newTodo);
+    },
+    deleteTodo(state, id) {
+      state.todos = state.todos.filter((todo) => todo.id !== id);
     },
   },
 };

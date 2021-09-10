@@ -2,9 +2,9 @@
   <div class="done-list">
     <div class="doneHeader">
       <p class="doneHeader1">Done</p>
-      <button class="trashBtn">
-        <i class="fas fa-trash" @click="deleteTodo(todo.id)"></i>
-      </button>
+      <!-- <button class="trashBtn">
+        
+      </button> -->
     </div>
     <div class="done-tasks">
       <Todo
@@ -14,7 +14,8 @@
         :complete="todo.complete"
         :id="todo.id"
         :todo="todo"
-      />
+        ><i class="fas fa-trash" @click="removeTodo(todo.id)"></i>
+      </Todo>
     </div>
   </div>
 </template>
@@ -32,10 +33,6 @@ export default {
   },
   methods: {
     ...mapActions(['getAllTodos', 'removeTodo']),
-    deleteTodo(id) {
-      this.removeTodo(id);
-      this.getAllTodos();
-    },
   },
 };
 </script>
@@ -74,6 +71,11 @@ export default {
   border: none;
   font-size: 24px;
   color: #000000;
+  cursor: pointer;
+}
+.fas {
+  margin-right: 15px;
+  font-size: 18px;
   cursor: pointer;
 }
 </style>

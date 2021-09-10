@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Learn JavaScript",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "title": "Learn Vue CLI",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "title": "Finish this app",
+      "complete": true
+    },
+    {
+      "id": 4,
+      "title": "Do something",
+      "complete": true
+    },
+    {
+      "title": "Apply for a job",
+      "complete": false,
+      "id": 5
+    }
+  ]
+}

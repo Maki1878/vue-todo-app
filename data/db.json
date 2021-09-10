@@ -2,18 +2,23 @@
   "todos": [
     {
       "id": 5,
-      "title": "Apply for a job",
+      "title": "Apply for a job now",
       "complete": false
     },
     {
       "id": 6,
       "title": "Add a button",
-      "complete": true
+      "complete": false
     },
     {
       "id": 7,
       "title": "Change the order",
-      "complete": false
+      "complete": true
+    },
+    {
+      "title": "do something in css",
+      "complete": false,
+      "id": 8
     }
   ]
 }

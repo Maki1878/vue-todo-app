@@ -3,7 +3,7 @@
     <!-- <label>Title:</label>
     <input type="text" required v-model.trim="title" /> -->
     <label>Todo:</label>
-    <textarea required v-model.trim="todo"></textarea>
+    <textarea required v-model.trim="todo" ref="todoInput"></textarea>
     <button>Add Task</button>
   </form>
 </template>
@@ -27,6 +27,12 @@ export default {
       this.getAllTodos();
       this.$router.push({ name: 'Home' });
     },
+    focusInput() {
+      this.$refs.todoInput.focus();
+    },
+  },
+  mounted() {
+    this.focusInput();
   },
 };
 </script>

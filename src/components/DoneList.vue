@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 .done-list {
-  background-color: #f0f1f7;
+  background-color: #ededf2;
   border-radius: 8px;
   opacity: 0.638485863095238;
   width: 525px;

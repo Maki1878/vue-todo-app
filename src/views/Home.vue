@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h3 class="container-title">Manage your to do list</h3>
-    <p class="instruction">Click on checkbox or drag and drop to done</p>
+    <p class="instruction">Click on checkbox to done</p>
     <div class="lists">
       <ActiveList />
       <DoneList />

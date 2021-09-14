@@ -1,24 +1,19 @@
 {
   "todos": [
     {
-      "id": 5,
-      "title": "Apply for a job now",
-      "complete": false
-    },
-    {
-      "id": 6,
-      "title": "Add a button",
-      "complete": false
-    },
-    {
-      "id": 7,
-      "title": "Change the order",
+      "id": 1,
+      "title": "First todo",
       "complete": true
     },
     {
-      "title": "do something in css",
+      "title": "Second todo",
       "complete": false,
-      "id": 8
+      "id": 2
+    },
+    {
+      "title": "Third todo",
+      "complete": false,
+      "id": 3
     }
   ]
 }

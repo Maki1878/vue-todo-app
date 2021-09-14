@@ -4,7 +4,7 @@
     <input type="text" required v-model.trim="title" /> -->
     <label>Todo:</label>
     <textarea required v-model.trim="todo" ref="todoInput"></textarea>
-    <button>Add Task</button>
+    <button>Add a Todo</button>
   </form>
 </template>
 

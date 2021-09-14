@@ -2,12 +2,14 @@
   <div class="todo">
     <input :checked="complete" type="checkbox" @change="toggleComplete(todo)" />
     <div class="text-input">
-      <input :value="title" type="text" @change="changeText(todo, $event.target.value)" />
+      <input
+        :value="title"
+        type="text"
+        @change="changeText(todo, $event.target.value)"
+        :disabled="todo.complete"
+      />
       <slot></slot>
     </div>
-    <!-- <div v-if="showDetails" class="details">
-      <p>{{ task.details }}</p>
-    </div> -->
   </div>
 </template>
 

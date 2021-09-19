@@ -1,9 +1,9 @@
 <template>
-  <div class="todo-list">
+  <div class="activeList-container">
     <div class="activeHeader">
-      <p class="todoHeader">To-do-list</p>
+      <p class="activeHeader-title">To-do-list</p>
       <button class="addBtn">
-        <i class="fas fa-plus" @click="addNewTodo"></i>
+        <i class="fas fa-plus add-icon" @click="addNewTodo"></i>
       </button>
     </div>
     <div class="active-tasks">
@@ -37,27 +37,27 @@ export default {
 </script>
 
 <style scoped>
-.todo-list {
+.activeList-container {
   background-color: #ededf2;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   opacity: 0.638485863095238;
-  width: 525px;
-  min-height: 320px;
+  width: 48%;
+  min-height: 32rem;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 1.6rem;
 }
 
 .activeHeader {
   position: relative;
-  height: 50px;
+  height: 5rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.todoHeader {
+.activeHeader-title {
   position: absolute;
-  left: 0px;
-  padding-left: 10px;
+  padding-left: 1rem;
   font-weight: bold;
   color: #262626;
   font-size: 20px;
@@ -66,9 +66,9 @@ export default {
 .addBtn {
   position: absolute;
   right: 0px;
-  padding-right: 30px;
+  padding-right: 3rem;
   border: none;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #000000;
   cursor: pointer;
 }

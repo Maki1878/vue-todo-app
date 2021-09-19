@@ -7,24 +7,24 @@
 
 <script>
 export default {
-  name: 'TheNavbar'
+  name: 'TheNavbar',
 };
 </script>
 
 <style scoped>
 .main-nav {
   text-align: center;
-  margin: 10px auto;
+  margin: 1rem auto;
 }
 .main-nav a {
   display: inline-block;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 1rem;
   color: rgb(66, 63, 63);
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 a.router-link-active {
-  border-bottom: 3px solid #4564f0;
-  padding-bottom: 4px;
+  border-bottom: 0.3rem solid #4564f0;
+  padding-bottom: 0.4rem;
 }
 </style>

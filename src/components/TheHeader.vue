@@ -1,18 +1,18 @@
 <template>
   <div class="header">
-    <div class="header-box">
-      <div class="left">
-        <img src="../assets/Logo1.svg" alt="" />
-        <img class="todobox" src="../assets/Todobox.svg" alt="" />
+    <div class="header-main">
+      <div class="header-todobox-section">
+        <img src="../assets/Logo1.svg" alt="todobox logo" class="todobox-logo" />
+        <img class="todobox-text" src="../assets/Todobox.svg" alt="" />
       </div>
-      <div class="right">
+      <div class="header-user-section">
         <div class="username">
           <p>
             Username
           </p>
         </div>
         <div>
-          <i class="fas fa-user-circle"></i>
+          <i class="fas fa-user-circle user-icon"></i>
         </div>
       </div>
     </div>
@@ -37,8 +37,8 @@ export default {
   height: 80px;
 }
 
-.header-box {
-  max-width: 1082px;
+.header-main {
+  max-width: 108.2rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -46,16 +46,7 @@ export default {
   height: 100%;
 }
 
-.fa-user-circle {
-  font-size: 48px;
-  color: #b3b5b4;
-}
-
-.right {
-  display: flex;
-}
-
-.left {
+.header-user-section {
   display: flex;
 }
 
@@ -63,10 +54,19 @@ export default {
   font-size: 16px;
   font-weight: bold;
   color: #464646;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 
-.todobox {
-  margin-left: 20px;
+.user-icon {
+  font-size: 4.8rem;
+  color: #b3b5b4;
+}
+
+.header-todobox-section {
+  display: flex;
+}
+
+.todobox-text {
+  margin-left: 2rem;
 }
 </style>

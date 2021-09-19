@@ -1,5 +1,5 @@
 <template>
-  <div class="todo">
+  <div class="todo-item">
     <input :checked="complete" type="checkbox" @change="toggleComplete(todo)" />
     <div class="text-input">
       <input
@@ -40,18 +40,18 @@ export default {
 </script>
 
 <style scoped>
-.todo {
+.todo-item {
   background-color: #ffffff;
   border-radius: 8px;
   width: 100%;
-  height: 50px;
-  margin-bottom: 10px;
+  height: 5rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
 }
 
 .text-input {
-  height: 35px;
+  height: 3.5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -62,5 +62,6 @@ export default {
   border: none;
   outline: none;
   flex: 1;
+  font-size: 14px;
 }
 </style>

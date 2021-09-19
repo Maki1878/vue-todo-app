@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <h3 class="container-title">Manage your to do list</h3>
-    <p class="instruction">Click on checkbox to done</p>
-    <div class="lists">
+    <p class="instructions">Click on checkbox to done</p>
+    <div class="lists-container">
       <ActiveList />
       <DoneList />
     </div>
@@ -31,26 +31,27 @@ export default {
 
 <style scoped>
 .main {
-  padding: 0 14.5%;
+  width: 72%;
+  margin: 0 auto;
 }
 
-.lists {
+.lists-container {
   display: flex;
   justify-content: space-between;
 }
 
 .container-title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   color: #262626;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
-.instruction {
+.instructions {
   color: #464646;
   font-weight: 500;
-  font-size: 16px;
-  opacity: 0.6553431919642857;
+  font-size: 1.6rem;
+  opacity: 0.7;
   padding-top: 0;
   margin-top: 0;
 }

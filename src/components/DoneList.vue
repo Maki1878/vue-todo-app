@@ -1,10 +1,7 @@
 <template>
-  <div class="done-list">
+  <div class="doneList-container">
     <div class="doneHeader">
-      <p class="doneHeader1">Done</p>
-      <!-- <button class="trashBtn">
-        
-      </button> -->
+      <p class="doneHeader-title">Done</p>
     </div>
     <div class="done-tasks">
       <Todo
@@ -14,7 +11,7 @@
         :complete="todo.complete"
         :id="todo.id"
         :todo="todo"
-        ><i class="fas fa-trash" @click="removeTodo(todo.id)"></i>
+        ><i class="fas fa-trash trash-icon" @click="removeTodo(todo.id)"></i>
       </Todo>
     </div>
   </div>
@@ -38,43 +35,34 @@ export default {
 </script>
 
 <style scoped>
-.done-list {
+.doneList-container {
   background-color: #ededf2;
   border-radius: 8px;
   opacity: 0.638485863095238;
-  width: 525px;
-  min-height: 320px;
+  width: 48%;
+  min-height: 32rem;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 1.6rem;
 }
 
 .doneHeader {
   position: relative;
-  height: 50px;
+  height: 5rem;
   display: flex;
   align-items: center;
 }
 
-.doneHeader1 {
+.doneHeader-title {
   position: absolute;
   left: 0px;
-  padding-left: 10px;
+  padding-left: 1rem;
   font-weight: bold;
   color: #262626;
   font-size: 20px;
 }
 
-.trashBtn {
-  position: absolute;
-  right: 0px;
-  padding-right: 30px;
-  border: none;
-  font-size: 24px;
-  color: #000000;
-  cursor: pointer;
-}
-.fas {
-  margin-right: 15px;
+.trash-icon {
+  margin-right: 1.5rem;
   font-size: 18px;
   cursor: pointer;
 }

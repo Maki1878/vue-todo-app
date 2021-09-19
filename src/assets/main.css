@@ -4,3 +4,7 @@ body {
   overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
+
+html {
+  font-size: 62.5%; /*1rem = 10px*/
+}

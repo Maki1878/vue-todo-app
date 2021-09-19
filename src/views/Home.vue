@@ -55,4 +55,33 @@ export default {
   padding-top: 0;
   margin-top: 0;
 }
+
+@media (max-width: 85em) {
+  .main {
+    width: 85%;
+  }
+}
+
+@media (max-width: 75em) {
+  .main {
+    width: 96%;
+  }
+}
+
+@media (max-width: 57em) {
+  .lists-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 57em) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 </style>

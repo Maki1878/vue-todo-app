@@ -6,9 +6,9 @@
       "complete": true
     },
     {
+      "id": 2,
       "title": "Second todo",
-      "complete": false,
-      "id": 2
+      "complete": false
     },
     {
       "title": "Third todo",

@@ -45,6 +45,7 @@ export default {
   min-height: 32rem;
   box-sizing: border-box;
   padding: 1.6rem;
+  margin-bottom: 5rem;
 }
 
 .activeHeader {
@@ -71,5 +72,25 @@ export default {
   font-size: 2.4rem;
   color: #000000;
   cursor: pointer;
+}
+
+@media (max-width: 75em) {
+  .activeList-container {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 57em) {
+  .activeList-container {
+    width: 52em;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .activeList-container {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 </style>

@@ -38,7 +38,7 @@ export default {
 }
 
 .header-main {
-  max-width: 108.2rem;
+  max-width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

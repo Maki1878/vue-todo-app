@@ -43,6 +43,7 @@ export default {
   min-height: 32rem;
   box-sizing: border-box;
   padding: 1.6rem;
+  margin-bottom: 5rem;
 }
 
 .doneHeader {
@@ -65,5 +66,25 @@ export default {
   margin-right: 1.5rem;
   font-size: 18px;
   cursor: pointer;
+}
+
+@media (max-width: 75em) {
+  .doneList-container {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 57em) {
+  .doneList-container {
+    width: 52em;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .doneList-container {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 </style>

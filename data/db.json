@@ -11,9 +11,9 @@
       "complete": false
     },
     {
+      "id": 3,
       "title": "Third todo",
-      "complete": false,
-      "id": 3
+      "complete": false
     }
   ]
 }

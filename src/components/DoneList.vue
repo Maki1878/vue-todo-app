@@ -29,7 +29,7 @@ export default {
     ...mapGetters(['doneTodos']),
   },
   methods: {
-    ...mapActions(['getAllTodos', 'removeTodo']),
+    ...mapActions(['removeTodo']),
   },
 };
 </script>

@@ -15,14 +15,13 @@ export default {
     };
   },
   methods: {
-    ...mapActions(['getAllTodos', 'addTodo']),
+    ...mapActions(['addTodo']),
     addNewTodo() {
       let todo = {
         title: this.todo,
         complete: false,
       };
       this.addTodo(todo);
-      this.getAllTodos();
       this.$router.push({ name: 'Home' });
     },
     focusInput() {
